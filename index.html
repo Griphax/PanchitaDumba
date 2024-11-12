@@ -11,6 +11,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#socials {
+				
+				list-style: none; /* Removes bullet points */
+				padding: 0;
+				margin: 0;
+				display: flex; /* Use flexbox for horizontal layout */
+				justify-content: space-around; /* Optional: space items evenly */
+				align-items: center; /* Optional: align items vertically */
+			}
+		
+			#socials li {
+				display: flex;
+				flex-direction: column;
+				align-items: center; /* Centers image and text */
+				margin: 0 15px; /* Optional: space between items */
+			}
+		
+			#socials img {
+				margin-bottom: 8px; /* Optional: space between image and link */
+			}
+		
+			#socials a {
+				text-decoration: none;
+				color: inherit; /* Use default color or set custom color */
+				font-weight: bold;
+				font-size: 30px; /* Adjust the font size as needed */
+			}
+		</style>
 		<script>
 			function copyToClipboard() {
 				const textToCopy = document.getElementById('copyText').innerText;
@@ -21,6 +50,21 @@
 				});
 			}
 		</script>
+		    <style>
+				.actions {
+					display: flex;
+					justify-content: space-around;
+					list-style-type: none;
+					padding: 0;
+				}
+				.actions li {
+					margin: 0 10px;
+				}
+				.actions img {
+					width: 50px; /* Adjust the size as needed */
+					height: auto;
+				}
+			</style>
 	</head>
 	<body class="landing is-preload">
 		
@@ -51,23 +95,40 @@
 			<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-							<h2>$PnD</h2><br>
-							<h2>Panchita<br>&<br>Dumba</h2>
-							<ul class="actions special">
-								<li><a href="#" class="button primary">ca</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
+					<h1>$PnD</h1><br>
+					<h2>Panchita<br>&<br>Dumba</h2>
+					<nav>
+						
+						<h1 class="headline">COMMUNITY</h1><br><br>
+						
+						<ul id="socials">
+							<li>
+								<img src="/images/logo-white.png" alt="X" height="145" width="auto"><br>
+								<a href="https://x.com/Way_of_The_Past" target="_blank">X</a>
+							</li>
+							<li>
+								<img src="/images/Logo.png" alt="DEXSCREENER" height="145" width="auto"><br>
+								<a href="https://t.me/" target="_blank">TG Group</a>
+							</li>
+							<li>
+								<img src="/images/BBqyuDPm_400x400.png" alt="DEXSCREENER" height="145" width="auto"><br>
+								<a href="https://pump.fun" target="_blank">pump.fun</a>
+							</li>
+						</ul><br>
+						
+					</nav><br><br>
+					<p id="ca">ca: <a id="copyText" href="#" onclick="copyToClipboard()">asff3fafs</a></p>
+						<!-- <a href="#one" class="more scrolly" class="biggerbigger">BUY HERE!</a> -->
 					</section>
+					
 					
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2 class="biggerbigger">We need help to defeat the enemy!<br />
+								<h2 class="biggerfont">We need help to defeat the enemy!<br />
 								Join Panchita & Dumba in this adventure!</h2>
-								<p class="biggerfont">Similar to the the bulls and the bears rivalry, we need the community to take over and we will be victorious against the bears.<br/>
-									<p>ca: <a id="copyText" href="#" onclick="copyToClipboard()">asff3fafs</a></p>
+								<p class="biggerfont">Similar to the the bulls and the bears rivalry, we need the community to take over, this way we will be victorious.<br/>
 								</p>
 							</header>
 							<ul class="icons major">
@@ -107,27 +168,29 @@
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h1>HOW TO BUY</h1>
+								<p>PONER UNA IMAGEN</p>
 							</header>
 							<ul class="features">
 								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<img src="images/Phantom-Logo-Purple.png" alt="Create Wallet" class="box-image" height="47px" width="auto">
+									<h2 class="buycolor">1. CREATE WALLET</h2>
+									<p>Download Phantom or your wallet of choice from the app store or Google Play for free. Desktop users, download the Google Chrome extension by going to Phantom.</p>
 								</li>
 								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<img src="images/solanaLogo.png" alt="Get Some SOL" class="box-image" height="44px" width="auto">
+									<h2 class="buycolor">2. GET SOME SOL</h2>
+									<p>Switch SOL for $PnD. We have Zero taxes so you don’t need to worry about buying with a specific slippage.</p>
 								</li>
 								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<img src="images/logo-with-text-bright.svg" alt="Go to Jup.ag" class="box-image" height="55px" width="auto">
+									<h2 class="buycolor">3. GO TO JUP.AG</h2>
+									<p>Connect to Jupiter. Connect your wallet in chrome. Paste the $PnD token address and confirm. When Phantom prompts you for a wallet signature, sign.</p>
 								</li>
 								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
+									<img src="images/cropped_image (2).png" alt="Swap to $WoTP" class="box-image" height="78px" width="auto">
+									<h2 class="buycolor">4. SWAP TO $PnD</h2>
+									<p>Switch SOL for $PnD. We have Zero taxes so you don’t need to worry about buying with a specific slippage.</p>
 
 							</ul>
 						</div>
